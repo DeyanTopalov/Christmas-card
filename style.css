@@ -1,0 +1,165 @@
+:root {
+    --fs-300: 0.8rem;
+    --fs-400: 1rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 1.75rem;
+    --fs-800: 2rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --ff-body: system-ui;
+
+    --brd-radius: 0.5rem;
+
+    --clr-white-hsl: 20, 33%, 98%;
+    --clr-greenish-hsl: 194, 79%, 9%;
+    --clr-blueish-hsl: 191, 96%, 29%;
+}
+
+html {
+    background: url(assets/christmas-6809681_1920.png);
+    object-fit: cover;
+}
+
+body {
+    /* max-height: 100vh; */
+    font-family: var(--ff-body), sans-serif;
+    display: grid;
+    place-content: center;
+    padding-inline: 1rem;
+}
+
+.header {
+    margin-top: 6rem;
+    display: grid;
+    place-content: center;
+    gap: 1.5rem;
+    background-color: hsla(var(--clr-greenish-hsl), 0.9);
+    border-radius: var(--brd-radius);
+    border: 2px solid hsla(var(--clr-blueish-hsl), 0.8);
+
+}
+
+.header-title {
+    font-size: var(--fs-800);
+    font-weight: var(--fw-700);
+    text-align: center;
+    color: hsla(var(--clr-white-hsl), 1)
+}
+
+.header-subtitle {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-500);
+    text-align: center;
+    color: hsla(var(--clr-white-hsl), 1);
+    padding-bottom: 0.5rem;
+}
+
+.rout-cards {
+    margin-top: 4rem;
+    padding-inline: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.rout-card {
+    display: grid;
+    gap: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    background-color: hsla(var(--clr-greenish-hsl), 0.9);
+    border-radius: var(--brd-radius);
+    border: 2px solid hsla(var(--clr-blueish-hsl), 0.8);
+}
+
+
+.name {
+    color: hsla(var(--clr-white-hsl), 1);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-700);
+    text-align: center;
+}
+
+.button {
+    margin-block: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    max-width: 30%;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+    background-color: hsla(var(--clr-greenish-hsl), 0.9);
+    border-radius: var(--brd-radius);
+    border-radius: 1rem;
+    border: 2px solid hsla(var(--clr-blueish-hsl), 0.8);
+    color: hsla(var(--clr-white-hsl), 1);
+    font-weight: var(--fw-700);
+    transition: 250ms;
+    z-index: 1;
+}
+
+.button:is(:hover, :focus) {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.gift-page-header {
+    /* margin-top: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.avatar {
+    max-width: 80%;
+    transform: translateY(-2rem);
+}
+
+.gift-page-cards {
+    margin-top: -5rem;
+    padding-inline: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card-wishes {
+    display: grid;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    min-height: 12rem;
+    background-color: hsla(var(--clr-greenish-hsl), 0.9);
+    border-radius: var(--brd-radius);
+    border: 2px solid hsla(var(--clr-blueish-hsl), 0.8);
+    color: hsla(var(--clr-white-hsl), 1);
+
+}
+
+
+.wish {
+    font-style: italic;
+    font-size: var(--fs-300);
+}
+
+.wish-from {
+    justify-self: end;
+    max-width: 15rem;
+    text-align: end;
+    font-size: var(--fs-500);
+    font-weight: var(--fw-500);
+    text-wrap: balance;
+
+}
+
+.emoji-span {
+    font-style: normal;
+}
+
+footer {
+    margin-bottom: 10rem;
+}
