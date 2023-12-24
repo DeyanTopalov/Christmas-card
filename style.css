@@ -25,11 +25,14 @@ html {
 }
 
 body {
-    /* max-height: 100vh; */
     font-family: var(--ff-body), sans-serif;
     display: grid;
     place-content: center;
     padding-inline: 1rem;
+}
+
+.container {
+    max-width: 37.5rem;
 }
 
 .header {
